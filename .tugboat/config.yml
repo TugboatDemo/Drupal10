@@ -27,7 +27,7 @@ services:
 
         # Create the Drupal private and public files directories if they aren't
         # already present.
-        - mkdir -p "${TUGBOAT_ROOT}/files-private" "${DOCROOT}/sites/default/files"
+        - mkdir -p "${TUGBOAT_ROOT}/files-private" "${DOCROOT}/sites/default/files" || true
 
         # A common practice in many Drupal projects is to store the config and
         # private files outside of the Drupal root. If that's the case for your
