@@ -38,7 +38,7 @@ services:
         - composer install --optimize-autoloader
 
         # Use the tugboat-specific Drupal settings.
-        - cp "${TUGBOAT_ROOT}/.tugboat/default.settings.php" "${DOCROOT}/sites/default/"
+        - cp "${TUGBOAT_ROOT}/.tugboat/default.settings.php" "${DOCROOT}/sites/default/settings.php"
 
         # A common practice in many Drupal projects is to store the config and
         # private files outside of the Drupal root. If that's the case for your
