@@ -47,6 +47,7 @@ services:
         # here. Here is an example of the latter option:
         - ln -snf "${TUGBOAT_ROOT}/config" "${DOCROOT}/../config"
         - ln -snf "${TUGBOAT_ROOT}/files-private" "${DOCROOT}/../files-private"
+        - ln -snf "${TUGBOAT_ROOT}/custom/themes" "${DOCROOT}/themes/custom"
 
         # Set file permissions such that Drupal will not complain
         - mkdir -p "${DOCROOT}/sites/default/files"
