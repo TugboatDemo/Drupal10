@@ -61,10 +61,11 @@ $databases['default']['default'] = [
   'database' => 'tugboat',
   'username' => 'tugboat',
   'password' => 'tugboat',
-  'host' => 'tugboat',
+  'host' => 'mysql',
   'port' => '3306',
   'driver' => 'mysql',
   'prefix' => '',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'collation' => 'utf8mb4_general_ci',
 ];
 
