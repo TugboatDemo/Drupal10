@@ -57,9 +57,6 @@ services:
         - find "${DOCROOT}/sites/default/files" -type d -exec chmod 2775 {} \;
         - find "${DOCROOT}/sites/default/files" -type f -exec chmod 0664 {} \;
 
-        # Install the site for the first?
-#        - vendor/bin/drush site:install --yes --account-pass=tugboat --db-url=mysql://tugboat:tugboat@mysql/tugboat
-
       # Commands that build the site. This is where you would add things
       # like feature reverts or any other drush commands required to
       # set up or configure the site. When a preview is built from a
@@ -67,10 +64,10 @@ services:
       # and update steps, because the results of those are inherited
       # from the base preview.
       build:
-#        - vendor/bin/drush cache:rebuild
-#        - vendor/bin/drush config:import -y
-#        - vendor/bin/drush updatedb -y
-#        - vendor/bin/drush cache:rebuild
+        - vendor/bin/drush cache:rebuild
+        - vendor/bin/drush config:import -y
+        - vendor/bin/drush updatedb -y
+        - vendor/bin/drush cache:rebuild
 
   # What to call the service hosting MySQL. This name also acts as the
   # hostname to access the service by from the php service.
