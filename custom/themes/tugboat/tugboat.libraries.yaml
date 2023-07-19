@@ -1,6 +1,5 @@
 base:
   version: VERSION
   css:
-    component:
-      css/tugboat.css:
-        weight: 0
+    theme:
+      css/tugboat.css: {}
