@@ -75,6 +75,8 @@ services:
   # What to call the service hosting MySQL. This name also acts as the
   # hostname to access the service by from the php service.
   mysql:
+    checkout: true;
+
     # Use the latest available 5.x version of MySQL
     image: tugboatqa/mariadb:10.5
 
