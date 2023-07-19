@@ -57,9 +57,6 @@ services:
         - find "${DOCROOT}/sites/default/files" -type d -exec chmod 2775 {} \;
         - find "${DOCROOT}/sites/default/files" -type f -exec chmod 0664 {} \;
 
-        # Install the site for the first?
-#        - vendor/bin/drush site:install --yes --account-pass=tugboat --db-url=mysql://tugboat:tugboat@mysql/tugboat
-
       # Commands that build the site. This is where you would add things
       # like feature reverts or any other drush commands required to
       # set up or configure the site. When a preview is built from a
