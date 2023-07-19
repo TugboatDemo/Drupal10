@@ -1,0 +1,6 @@
+base:
+  version: VERSION
+  css:
+    component:
+      css/tugboat.css:
+        weight: 0
