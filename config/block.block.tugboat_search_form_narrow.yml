@@ -1,0 +1,23 @@
+uuid: 5b6240aa-6208-4ab3-934c-3e4739f20d67
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - tugboat
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: tugboat_search_form_narrow
+theme: tugboat
+region: primary_menu
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
