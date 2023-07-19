@@ -17,7 +17,12 @@ services:
     commands:
       # Commands that set up the basic preview infrastructure
       init:
+        # Bump the memory limit to help Drupal along.
         - echo "memory_limit = 10240M" >> /usr/local/etc/php/conf.d/my-php.ini
+
+        # Set some helpful aliases for the cli and add the composer bin to the PATH.
+        - echo "alias ll='ls -la'" >> /root/.bashrc
+        - echo "export PATH=$PATH:${TUGBOAT_ROOT}/vendor/bin" >> /root/.bashrc
 
         # Install opcache and mod-rewrite.
         - docker-php-ext-install opcache
@@ -47,7 +52,6 @@ services:
         # project, you can either specify the absolute paths to those
         # directories in your settings.local.php, or you can symlink them in
         # here. Here is an example of the latter option:
-#        - ln -snf "${TUGBOAT_ROOT}/config" "${DOCROOT}/../config"
         - ln -snf "${TUGBOAT_ROOT}/files-private" "${DOCROOT}/../files-private"
         - ln -snf "${TUGBOAT_ROOT}/custom/themes" "${DOCROOT}/themes/custom"
 
