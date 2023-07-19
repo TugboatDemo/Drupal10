@@ -1,0 +1,22 @@
+uuid: d9c33154-d03f-4b43-bf29-2b9b2d58fdf6
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - tugboat
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: tugboat_help
+theme: tugboat
+region: content_above
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
