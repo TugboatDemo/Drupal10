@@ -6,3 +6,7 @@
   --color--primary-80: #8a1635;
   --color-text-neutral-loud: #8f1800;
 }
+
+h1 {
+  color: red !important;
+}

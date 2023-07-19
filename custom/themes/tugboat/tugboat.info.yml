@@ -19,7 +19,7 @@ package: Tugboat
 version: 1.0.0
 core_version_requirement: 10.1.1
 libraries:
-  - tugboat/base
+  - tugboat/global-styling
 regions:
   header: Header
   primary_menu: Primary menu

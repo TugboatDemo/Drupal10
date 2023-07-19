@@ -1,5 +1,4 @@
-base:
-  version: VERSION
+global-styling:
   css:
     theme:
-      css/tugboat.css: {}
+      css/tugboat.css: { }
