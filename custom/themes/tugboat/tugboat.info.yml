@@ -17,7 +17,6 @@ description: A clean, accessible, and flexible Drupal front-end theme.
 alt text: Screenshot of Olivero, Drupal front-end theme.
 package: Tugboat
 version: 1.0.0
-libraries:
 regions:
   header: Header
   primary_menu: Primary menu
