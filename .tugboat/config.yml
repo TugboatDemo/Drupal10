@@ -22,7 +22,7 @@ services:
 
         # Set some helpful aliases for the cli and add the composer bin to the PATH.
         - echo "alias ll='ls -la'" >> /root/.bashrc
-        - echo "export PATH=$PATH:${TUGBOAT_ROOT}/vendor/bin"
+        - echo "export PATH=$PATH:${TUGBOAT_ROOT}/vendor/bin" >> /root/.bashrc
 
         # Install opcache and mod-rewrite.
         - docker-php-ext-install opcache
