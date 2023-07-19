@@ -17,6 +17,8 @@ services:
     commands:
       # Commands that set up the basic preview infrastructure
       init:
+        - echo "memory_limit = 10240M" >> /usr/local/etc/php/conf.d/my-php.ini
+
         # Install opcache and mod-rewrite.
         - docker-php-ext-install opcache
         - a2enmod headers rewrite
@@ -55,10 +57,8 @@ services:
         - find "${DOCROOT}/sites/default/files" -type d -exec chmod 2775 {} \;
         - find "${DOCROOT}/sites/default/files" -type f -exec chmod 0664 {} \;
 
-        # Install the site for the first time and set the theme?
+        # Install the site for the first?
 #        - vendor/bin/drush site:install --yes --account-pass=tugboat --db-url=mysql://tugboat:tugboat@mysql/tugboat
-#        - vendor/bin/drush theme:enable olivero
-#        - vendor/bin/drush --yes config:set system.theme default olivero
 
       # Commands that build the site. This is where you would add things
       # like feature reverts or any other drush commands required to
