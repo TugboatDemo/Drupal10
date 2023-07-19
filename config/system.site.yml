@@ -2,8 +2,8 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: 26412b78-f8da-4588-84cb-914235d18cd7
-name: Drupal
-mail: ''
+name: 'Tugboat Demo'
+mail: support@tugboatqa.com
 slogan: ''
 page:
   403: ''
