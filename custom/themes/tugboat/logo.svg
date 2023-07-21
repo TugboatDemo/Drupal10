@@ -1,17 +1,1 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="495.000000pt" height="495.000000pt" viewBox="0 0 495.000000 495.000000"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,495.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M3920 4381 c-23 -15 -343 -326 -712 -692 -369 -365 -686 -672 -704
--682 -32 -16 -36 -16 -67 -1 -17 9 -117 101 -222 204 -189 188 -218 209 -267
-196 -13 -3 -112 -92 -221 -198 l-198 -193 1 -44 c0 -44 0 -44 208 -244 114
--111 320 -313 457 -449 185 -183 257 -248 274 -248 17 0 62 37 155 128 72 70
-136 132 142 137 7 6 205 201 440 435 236 234 601 595 811 804 398 394 413 411
-385 462 -19 35 -381 387 -411 400 -27 11 -34 10 -71 -15z"/>
-</g>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 407.65 407.65"><defs><style>.cls-1{fill:#8eb3c1;}.cls-2{fill:#d4e5eb;}.cls-3{fill:#31758e;}</style></defs><rect class="cls-1" x="131.82" y="157.28" width="144" height="144" rx="4.5" transform="translate(221.82 -76.97) rotate(45)"/><rect class="cls-2" x="131.82" y="106.37" width="144" height="144" rx="4.5" transform="translate(185.82 -91.88) rotate(45)"/><path class="cls-3" d="M277,105.18l-70,70a4.52,4.52,0,0,1-6.37,0l-19.09-19.1a4.51,4.51,0,0,0-6.36,0l-19.1,19.1a4.51,4.51,0,0,0,0,6.36l22.28,22.27,22.27,22.28a4.5,4.5,0,0,0,6.37,0l95.45-95.46a4.5,4.5,0,0,0,0-6.37l-19.09-19.09A4.51,4.51,0,0,0,277,105.18Z"/></svg>
