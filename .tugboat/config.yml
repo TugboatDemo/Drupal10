@@ -17,9 +17,6 @@ services:
     commands:
       # Commands that set up the basic preview infrastructure
       init:
-        # Bump the memory limit to help Drupal along.
-        #- echo "memory_limit = 1024M" >> /usr/local/etc/php/conf.d/my-php.ini
-
         # Set some helpful aliases for the cli and add the composer bin to the PATH.
         - echo "alias ll='ls -la'" >> /root/.bashrc
         - echo "export PATH=$PATH:${TUGBOAT_ROOT}/vendor/bin" >> /root/.bashrc
