@@ -17,9 +17,6 @@ services:
     commands:
       # Commands that set up the basic preview infrastructure
       init:
-        # Bump the memory limit to help Drupal along.
-        - echo "memory_limit = 10240M" >> /usr/local/etc/php/conf.d/my-php.ini
-
         # Set some helpful aliases for the cli and add the composer bin to the PATH.
         - echo "alias ll='ls -la'" >> /root/.bashrc
         - echo "export PATH=$PATH:${TUGBOAT_ROOT}/vendor/bin" >> /root/.bashrc
@@ -73,6 +70,9 @@ services:
         - vendor/bin/drush updatedb -y
         - vendor/bin/drush cache:rebuild
 
+    urls:
+      - /
+
   # What to call the service hosting MySQL. This name also acts as the
   # hostname to access the service by from the php service.
   mysql:
@@ -97,4 +97,4 @@ services:
       # Copy a database dump from an external server. The public
       # SSH key found in the Tugboat Repository configuration must be
       # copied to the external server in order to use scp.
-        - zcat ${TUGBOAT_ROOT}/tugboatdb.gz | mysql tugboat
+        - zcat ${TUGBOAT_ROOT}/tugboatdb.sql.gz | mysql tugboat
