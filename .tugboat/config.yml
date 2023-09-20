@@ -66,9 +66,9 @@ services:
       # from the base preview.
       build:
         - vendor/bin/drush cache:rebuild
-        - vendor/bin/drush config:import -y
-        - vendor/bin/drush updatedb -y
-        - vendor/bin/drush cache:rebuild
+        #- vendor/bin/drush config:import -y
+        #- vendor/bin/drush updatedb -y
+        #- vendor/bin/drush cache:rebuild
 
     urls:
       - /
