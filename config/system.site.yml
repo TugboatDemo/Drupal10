@@ -1,10 +1,10 @@
 _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
-uuid: 26412b78-f8da-4588-84cb-914235d18cd7
-name: Tugboat
+uuid: 12e38ccc-19ee-4dce-935a-037ca821f98a
+name: 'Drupal 10 Tugboat Demo'
 mail: support@tugboatqa.com
-slogan: 'Deploy with Confidence'
+slogan: ''
 page:
   403: ''
   404: ''
