@@ -13,8 +13,10 @@ services:
     # Wait until the mysql service is done building
     depends: mysql
 
+    alias_type: domain
+
     aliases:
-      - stage
+      - tugboatdemo.com
 
     # A set of commands to run while building this service
     commands:
