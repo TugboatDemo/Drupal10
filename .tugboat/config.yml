@@ -13,6 +13,9 @@ services:
     # Wait until the mysql service is done building
     depends: mysql
 
+    aliases:
+      - stage
+
     # A set of commands to run while building this service
     commands:
       # Commands that set up the basic preview infrastructure
