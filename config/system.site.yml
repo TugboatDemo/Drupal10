@@ -2,9 +2,9 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: 12e38ccc-19ee-4dce-935a-037ca821f98a
-name: 'Drupal 10 Tugboat Demo'
+name: 'My Cool Tugboat Demo'
 mail: support@tugboatqa.com
-slogan: ''
+slogan: 'Goats in tubs!'
 page:
   403: ''
   404: ''
