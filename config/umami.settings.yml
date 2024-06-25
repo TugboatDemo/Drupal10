@@ -4,7 +4,6 @@ features:
   comment_user_verification: true
   favicon: 1
 logo:
-  # something
   use_default: 0
   path: ''
 favicon:
