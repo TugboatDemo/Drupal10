@@ -1,0 +1,33 @@
+uuid: a58b324a-4efe-4eb4-8512-49fb446bee3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_severity
+field_name: field_severity
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'D'
+      label: 'Tropical Depression'
+    -
+      value: 'S'
+      label: 'Tropical Storm'
+    -
+      value: 'H'
+      label: Hurricane
+    -
+      value: 'M'
+      label: 'Major Hurriane'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

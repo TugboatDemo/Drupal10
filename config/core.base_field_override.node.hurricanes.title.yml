@@ -1,0 +1,18 @@
+uuid: 252a4421-5135-4da7-b1d3-9f8b2ead8085
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hurricanes
+id: node.hurricanes.title
+field_name: title
+entity_type: node
+bundle: hurricanes
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
