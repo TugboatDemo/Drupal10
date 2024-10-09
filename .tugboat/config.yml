@@ -57,6 +57,9 @@ services:
         - chgrp -R www-data "${DOCROOT}/sites/default/files"
         - find "${DOCROOT}/sites/default/files" -type d -exec chmod 2775 {} \;
         - find "${DOCROOT}/sites/default/files" -type f -exec chmod 0664 {} \;
+        - tar -xvzf "${TUGBOAT_ROOT}"/files.tgz -C /tmp
+        - rsync -av /tmp/files/ $TUGBOAT_ROOT/web/sites/default/files
+        - rm -Rf /tmp/files
 
       # Commands that build the site. This is where you would add things
       # like feature reverts or any other drush commands required to
