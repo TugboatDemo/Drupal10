@@ -1,0 +1,24 @@
+uuid: 0bd390d0-f5d1-4509-bce2-fae844f3c03f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.hurricanes
+  module:
+    - text
+id: node.hurricanes.body
+field_name: body
+entity_type: node
+bundle: hurricanes
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

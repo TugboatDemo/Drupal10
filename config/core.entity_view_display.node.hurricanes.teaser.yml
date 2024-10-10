@@ -1,0 +1,35 @@
+uuid: 2ff69014-6f84-4a64-9fd3-d16af76ca88f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hurricanes.body
+    - field.field.node.hurricanes.field_category
+    - field.field.node.hurricanes.field_severity
+    - node.type.hurricanes
+  module:
+    - text
+    - user
+id: node.hurricanes.teaser
+targetEntityType: node
+bundle: hurricanes
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_category: true
+  field_severity: true
+  langcode: true

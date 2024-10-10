@@ -1,0 +1,21 @@
+uuid: f6f9c46a-8507-4b5f-8f73-e5edf1c618bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_severity
+    - node.type.hurricanes
+  module:
+    - options
+id: node.hurricanes.field_severity
+field_name: field_severity
+entity_type: node
+bundle: hurricanes
+label: Severity
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

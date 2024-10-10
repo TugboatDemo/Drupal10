@@ -1,0 +1,11 @@
+uuid: 5f5518a6-44c2-471d-a51b-06d37a377987
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hurricanes
+id: node.hurricanes
+target_entity_type_id: node
+target_bundle: hurricanes
+default_langcode: site_default
+language_alterable: false
