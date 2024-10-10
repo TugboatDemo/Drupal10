@@ -22,7 +22,7 @@ settings:
       label: Hurricane
     -
       value: 'M'
-      label: 'Major Hurriane'
+      label: 'Major Hurricane'
   allowed_values_function: ''
 module: options
 locked: false

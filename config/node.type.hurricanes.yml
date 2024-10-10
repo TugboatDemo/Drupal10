@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: Storm
 type: hurricanes
-description: ''
+description: 'When there are storms, we cook!'
 help: ''
 new_revision: true
 preview_mode: 1
