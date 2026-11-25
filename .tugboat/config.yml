@@ -68,10 +68,8 @@ services:
       # and update steps, because the results of those are inherited
       # from the base preview.
       build:
-        - vendor/bin/drush cache:rebuild
-        - vendor/bin/drush config:import -y
-        - vendor/bin/drush updatedb -y
-        - vendor/bin/drush cache:rebuild
+        # Run database updates, then import config, then rebuild caches.
+        - vendor/bin/drush deploy -y
 
         # File Sync Alternative: Enable Stage File Proxy.
         # This must be enabled after the config sync, otherwise Drupal will disable it when it runs the config sync.

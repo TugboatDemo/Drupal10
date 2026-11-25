@@ -17,6 +17,7 @@ dependencies:
     - content_translation
     - contextual
     - file
+    - help
     - layout_builder
     - node
     - path
@@ -35,6 +36,7 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access help pages'
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'administer shortcuts'

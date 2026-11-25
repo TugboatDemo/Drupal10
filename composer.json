@@ -16,10 +16,10 @@
     ],
     "require": {
         "composer/installers": "^2.0",
-        "drupal/core-composer-scaffold": "10.1.1",
-        "drupal/core-project-message": "10.1.1",
-        "drupal/core-recommended": "10.1.1",
-        "drush/drush": "^12.1"
+        "drupal/core-composer-scaffold": "^10.6",
+        "drupal/core-project-message": "^10.6",
+        "drupal/core-recommended": "^10.6",
+        "drush/drush": "^12.5"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -94,6 +94,6 @@
         }
     },
     "require-dev": {
-        "drupal/stage_file_proxy": "^2.1"
+        "drupal/stage_file_proxy": "^3.1.7"
     }
 }
