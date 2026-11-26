@@ -45,7 +45,7 @@ settings:
         - '<a hreflang>'
         - '<blockquote cite>'
         - '<ul type>'
-        - '<ol type start>'
+        - '<ol type>'
         - '<h2 id>'
         - '<h3 id>'
         - '<h4 id>'
@@ -53,11 +53,9 @@ settings:
         - '<h6 id>'
         - '<img src alt data-entity-type data-entity-uuid data-align data-caption width height>'
         - '<drupal-media data-view-mode title>'
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
 image_upload:
   status: false
-  scheme: public
-  directory: inline-images
-  max_size: ''
-  max_dimensions:
-    width: null
-    height: null
