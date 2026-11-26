@@ -38,9 +38,6 @@ services:
       # skipping the init step, because the results of that step will
       # already be present.
       update:
-        # Install/update packages managed by composer, including drush.
-        - composer install --optimize-autoloader
-
         # Use the tugboat-specific Drupal settings.
         - cp "${TUGBOAT_ROOT}/.tugboat/default.settings.php" "${DOCROOT}/sites/default/settings.php"
 
@@ -68,6 +65,11 @@ services:
       # and update steps, because the results of those are inherited
       # from the base preview.
       build:
+        # Install/update packages managed by composer, including drush. This
+        # runs in build (not update) so previews built from a base preview
+        # pick up composer.json/composer.lock changes in the pull request.
+        - composer install --optimize-autoloader
+
         # Run database updates, then import config, then rebuild caches.
         - vendor/bin/drush deploy -y
 
